@@ -81,6 +81,13 @@ a {
   text-decoration: none;
 }
 
+/*header*/
+
+header {
+  min-height: 100vh;
+  background: url(/frontend/images/img-05.jpg) center/cover no-repeat;
+}
+
 /*
 =============
 Banner section
@@ -392,7 +399,7 @@ Our serive
   border-radius: var(--radius);
 }
 
-.item-info header {
+.item-info div {
   display: flex;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
