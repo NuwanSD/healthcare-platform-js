@@ -403,6 +403,7 @@ Our serive
   display: grid;
   gap: 3rem 2rem;
   justify-items: center;
+  padding: 2rem;
 }
 
 .menu-item {
