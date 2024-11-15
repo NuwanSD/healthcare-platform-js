@@ -157,6 +157,7 @@ nav {
 .links a {
   color: var(--clr-grey-3);
   font-size: 1rem;
+  font-weight: 800;
   text-transform: capitalize;
   /* letter-spacing: var(--spacing); */
   display: block;
