@@ -51,8 +51,45 @@
         </nav>
       </section>
 
-      <section style="min-height: 50vh; text-align: center">
-        <h1>Appointments</h1>
+      <section class="form-section">
+        <div class="form">
+          <h1 style="text-align: center">Book Your Appointment</h1>
+          <form action="">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" /><br />
+            <label for="NIC">NIC NO</label>
+            <input type="number" id="NIC" name="NIC" /><br />
+
+            <div>
+              <label for="patientName">Gender : &nbsp;</label>
+              <label for="patientName">Male</label>
+              <input type="radio" id="male" name="gender" />
+              <label for="patientName">Female</label>
+              <input type="radio" id="female" name="gender" />
+            </div>
+            <br />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" /><br />
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" /><br />
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" /><br />
+
+            <label for="description">Address</label>
+            <textarea name="" id="" cols="30" rows="2"></textarea><br />
+
+            <label for="description">Description</label>
+            <textarea name="" id="" cols="30" rows="4"></textarea><br />
+
+            <button type="submit" value="submit">Submit</button>
+          </form>
+        </div>
+        <div class="form-image">
+          <img src="/frontend/images/img-02.jpg" alt="" width="100%" />
+        </div>
       </section>
 
       <section class="footer">

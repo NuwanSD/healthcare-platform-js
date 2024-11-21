@@ -206,3 +206,56 @@ nav {
     background: transparent;
   }
 }
+
+/*Form section*/
+
+.form-section {
+  padding: 30px 40px;
+  display: block;
+}
+
+.form {
+  background-color: white;
+  padding: 20px;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+form label {
+  font-size: larger;
+}
+
+form input,
+textarea {
+  padding: 8px;
+}
+
+form button {
+  padding: 6px 10px;
+  background-color: #222;
+  color: white;
+  border-radius: var(--radius);
+}
+
+.form-image {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 50%;
+  }
+  .form-section {
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+  }
+  .form-image {
+    width: 100%;
+  }
+}
