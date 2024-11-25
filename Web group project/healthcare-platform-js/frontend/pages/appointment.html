@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--styles-->
+    <link rel="stylesheet" href="appointment.css" />
+  </head>
+  <body>
+    <main>
+      <section class="nav">
+        <nav>
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <!-- <img src="" class="logo" alt="Medicare" /> -->
+              <a
+                href="/frontend/index.htm"
+                style="font-size: 30px; font-weight: 800"
+                >Medicare</a
+              >
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+              <li>
+                <a href="./appointment.html">Book Appointments</a>
+              </li>
+              <li>
+                <a href="./services.html">Our Services</a>
+              </li>
+              <li>
+                <a href="./packages.html">Health Packages</a>
+              </li>
+              <li>
+                <a href="./about.html">About Us</a>
+              </li>
+              <li>
+                <a href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+
+      <section class="form-section">
+        <div class="form">
+          <h1 style="text-align: center">Book Your Appointment</h1>
+          <form action="">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" /><br />
+            <label for="NIC">NIC NO</label>
+            <input type="number" id="NIC" name="NIC" /><br />
+
+            <div>
+              <label for="patientName">Gender : &nbsp;</label>
+              <label for="patientName">Male</label>
+              <input type="radio" id="male" name="gender" />
+              <label for="patientName">Female</label>
+              <input type="radio" id="female" name="gender" />
+            </div>
+            <br />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" /><br />
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" /><br />
+
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age" /><br />
+
+            <label for="description">Address</label>
+            <textarea name="" id="" cols="30" rows="2"></textarea><br />
+
+            <label for="description">Description</label>
+            <textarea name="" id="" cols="30" rows="4"></textarea><br />
+
+            <button type="submit" value="submit">Submit</button>
+          </form>
+        </div>
+        <div class="form-image">
+          <img src="/frontend/images/img-02.jpg" alt="" width="100%" />
+        </div>
+      </section>
+
+      <section class="footer">
+        <div>
+          <h2>Medicare</h2>
+          <p>
+            Medicare Hospital is a private hospital committed to delivering
+            exceptional healthcare across a range of specialties for more than
+            75 years.
+          </p>
+        </div>
+        <div>
+          <h2>Address</h2>
+          <ul>
+            <li>Medicare Hospital (Pvt) Ltd</li>
+            <li>232/1,Evergreen Park Rd</li>
+            <li>Narahenpita, Colombo 05</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact Us</h2>
+          <ul>
+            <li>medicare@gmail.com</li>
+            <li>+124563789</li>
+            <li>+124563789</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126734.45919258721!2d79.93157764248046!3d6.955905724675635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1730910033779!5m2!1sen!2slk"
+            width="100%"
+            height="182"
+            style="border: 0"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!--javascript-->
+      <script type="module" src="appointment.js"></script>
+    </main>
+  </body>
+</html>
