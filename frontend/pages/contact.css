@@ -206,3 +206,156 @@ nav {
     background: transparent;
   }
 }
+
+/* 
+------------------------------------------------------------------------
+Adapted changes by me (Rachitha)
+------------------------------------------------------------------------
+*/
+
+.left,
+.right {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #7abaff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-details,
+.contact-form {
+  margin: 20px 0;
+}
+
+.contact-details h3,
+.contact-form h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.contact-details iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* 
+---------------------
+for base map
+---------------------
+*/
+.base-map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.base-map {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* left updated CSS for the contact details */
+.left {
+  background-color: var(
+    --clr-grey-10
+  ); /* Light grey background using defined variable */
+  padding: 20px; /* Space inside the box */
+  border-radius: var(--radius); /* Rounded corners using defined variable */
+  box-shadow: var(--light-shadow); /* Subtle shadow for depth */
+  font-family: var(--ff-secondary); /* Use secondary font */
+  color: var(--clr-grey-2); /* Dark grey text color for readability */
+}
+
+.left h3 {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5); /* Primary color for the heading */
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.left p {
+  font-size: 1rem;
+  line-height: 1.8; /* Better readability */
+  margin-bottom: 10px;
+}
+
+.left p strong {
+  color: var(--clr-grey-3); /* Slightly lighter grey for labels */
+}
+
+.left a {
+  color: var(--clr-primary-4); /* Link color matches primary shades */
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition); /* Smooth color transition on hover */
+}
+
+.left a:hover {
+  text-decoration: underline;
+  color: var(--clr-primary-2); /* Darker shade on hover */
+}
+
+/* Hover effect for the entire section */
+.left {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: var(--dark-shadow); /* Enhanced shadow on hover */
+}
