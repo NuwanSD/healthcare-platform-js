@@ -89,40 +89,110 @@
       </section>
 
       <section class="form-section">
-        <div class="form">
-          <h3 style="text-align: center">Book Your Appointment</h3>
-          <form action="" class="appointment-form">
-            <label for="patientName">Patient Name</label>
-            <input type="text" id="patientName" name="patientName" /><br />
-            <label for="NIC">NIC NO</label>
-            <input type="number" id="NIC" name="NIC" /><br />
+        <div class="form-component">
+          <h3>Book Your Appointment</h3>
+          <div>
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="patinetName"
+                  placeholder="name@example.com"
+                />
+                <label for="patinetName">Patient Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="patientNIC"
+                  placeholder="name@example.com"
+                />
+                <label for="patientNIC" class="form-label">Patient NIC</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="address"
+                />
+                <label for="address" class="form-label">Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="email"
+                />
+                <label for="email" class="form-label">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="phone"
+                />
+                <label for="phone" class="form-label">Contact Number</label>
+              </div>
+              <div class="mb-3" style="display: flex">
+                <label for="gender" class="form-label me-4">Gender</label>
+                <div class="form-check me-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="age"
+                  placeholder="age"
+                />
+                <label for="age" class="form-label">Age</label>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Doctors</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
 
-            <div>
-              <label for="patientName">Gender : &nbsp;</label>
-              <label for="patientName">Male</label>
-              <input type="radio" id="male" name="gender" />
-              <label for="patientName">Female</label>
-              <input type="radio" id="female" name="gender" />
-            </div>
-            <br />
+              <div class="input-group mb-3">
+                <span class="input-group-text">Description</span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" /><br />
-
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" /><br />
-
-            <label for="age">Age</label>
-            <input type="text" id="age" name="age" /><br />
-
-            <label for="description">Address</label>
-            <textarea name="" id="" cols="30" rows="2"></textarea><br />
-
-            <label for="description">Description</label>
-            <textarea name="" id="" cols="30" rows="4"></textarea><br />
-
-            <button type="submit" value="submit">Submit</button>
-          </form>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
         <div class="form-image">
           <img src="/frontend/images/img-02.jpg" alt="" width="100%" />
