@@ -85,7 +85,7 @@ a {
 .about {
   background-color: white;
   margin: 2rem 4rem;
-  padding: 30px 40px;
+  padding: 60px 40px;
   text-align: center;
   /* border-radius: var(--radius); */
   /* box-shadow: var(--light-shadow); */
@@ -133,7 +133,7 @@ Reviews
 */
 
 .testimonial {
-  padding: 30px 40px;
+  padding: 60px 40px;
   justify-items: center;
   background: var(--clr-grey-10);
 }
@@ -252,31 +252,33 @@ Our serive
 ===============
 */
 .service {
-  padding: 30px 40px;
+  padding: 60px 40px;
   justify-items: center;
   background: var(--clr-grey-10);
 }
-
-.service-section {
+.container {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  justify-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .service-section {
-    align-items: center;
-    justify-content: center;
-  }
+.container .row .col .card {
+  width: 16rem;
 }
-@media screen and (min-width: 1200px) {
-  .service-section {
-    align-items: center;
-    justify-content: center;
+
+@media screen and (max-width: 768px) {
+  .container .row {
+    display: inline-block;
+    justify-items: center;
+  }
+  .container .row .col {
+    margin-bottom: 2rem;
+  }
+  .container .row .col .card {
+    width: 100%;
   }
 }
 
 .accordion-section {
   margin: 2rem 4rem;
-  padding: 30px 40px;
+  padding: 60px 40px;
 }

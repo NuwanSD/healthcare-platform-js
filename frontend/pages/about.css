@@ -126,8 +126,7 @@ Banner section
 ===============*/
 
 .banner {
-  margin: 10px 6px;
-  padding: 30px 40px;
+  padding: 60px 40px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -136,19 +135,67 @@ Banner section
 }
 
 .banner-photo {
-  border-radius: 1rem;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .banner .banner-text {
   max-width: 500px;
+  width: 50%;
 }
 
 @media screen and (max-width: 768px) {
   .banner {
-    display: block;
-    justify-items: center;
+    display: inline-block;
   }
   .banner-photo {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
+  .banner .banner-text {
+    width: 100%;
+  }
+}
+
+.theme {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 60px 60px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--clr-grey-10);
+}
+
+@media screen and (max-width: 768px) {
+  .theme {
+    display: inline-block;
+    justify-items: center;
+  }
+  .theme .card {
+    margin-bottom: 2rem;
+  }
+}
+
+.department {
+  padding: 60px 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container .row {
+    display: inline-block;
+    justify-items: center;
+  }
+  .container .row .col {
+    margin-bottom: 2rem;
+  }
+}
+
+.desc {
+  background: var(--clr-grey-10);
+  padding: 60px 60px;
+  justify-items: center;
+  text-align: center;
 }
