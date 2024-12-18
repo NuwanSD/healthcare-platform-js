@@ -94,22 +94,22 @@ footer
 ============
 */
 .footer {
-  padding: 60px 20px;
+  padding: 60px 60px;
   display: flex;
   background-color: var(--clr-black);
   color: var(--clr-primary-10);
 }
 
-.footer .container .row {
+.footer .row {
   gap: 2rem;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
-  .footer .container .row {
+  .footer .row {
     display: inline-block;
   }
-  .footer .container .row .col {
+  .footer .row .col {
     width: 100%;
     margin-bottom: 2rem;
   }

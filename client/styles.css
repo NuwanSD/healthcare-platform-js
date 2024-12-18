@@ -101,22 +101,22 @@ footer
 ============
 */
 .footer {
-  padding: 60px 20px;
+  padding: 60px 60px;
   display: flex;
   background-color: var(--clr-black);
   color: var(--clr-primary-10);
 }
 
-.footer .container .row {
+.footer .row {
   gap: 2rem;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
-  .footer .container .row {
+  .footer .row {
     display: inline-block;
   }
-  .footer .container .row .col {
+  .footer .row .col {
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -247,28 +247,20 @@ Our serive
 ===============
 */
 .service {
-  padding: 60px 40px;
+  padding: 60px 60px;
   justify-items: center;
   background: var(--clr-grey-10);
 }
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.container .row .col .card {
-  width: 16rem;
-}
 
 @media screen and (max-width: 768px) {
-  .container .row {
+  .row {
     display: inline-block;
     justify-items: center;
   }
-  .container .row .col {
+  .row .col {
     margin-bottom: 2rem;
   }
-  .container .row .col .card {
+  .row .col .card {
     width: 100%;
   }
 }

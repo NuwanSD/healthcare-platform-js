@@ -2,33 +2,34 @@
 const reviews = [
   {
     id: 1,
-    name: "DR Susan Smith",
-    job: "web developer",
+    name: "Sarah Johnson",
+    job: "Teacher",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    text: "The care and attention I received at this hospital were exceptional. From the friendly staff at reception to the skilled doctors who treated me, every step of my recovery journey was seamless. I highly recommend their outpatient services!",
   },
   {
     id: 2,
-    name: "Dr Anna Johnson",
-    job: "web designer",
+    name: "James Anderson",
+    job: "Software Engineer",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-    text: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+    text: "The emergency care team saved my life after a serious accident. Their quick response, advanced facilities, and compassionate care made a stressful situation much easier. Thank you for being there when I needed help the most!",
   },
   {
     id: 3,
-    name: "Dr Peter Jones",
-    job: "intern",
+    name: "Maria Gonzalez",
+    job: "Small Business Owner",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    text: "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+    text: "I chose this hospital for my maternity care, and it was the best decision I could have made. The doctors and nurses were so supportive, and the NICU team took great care of my premature baby. Forever grateful!",
   },
   {
     id: 4,
-    name: "Dr Bill Anderson",
-    job: "the boss",
+    name: "Robert Wilson",
+    job: "Retired Veteran",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
-    text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+    text: "The cardiology department here is second to none. The team explained every detail of my treatment plan clearly and ensured my comfort throughout my surgery and recovery. I feel much healthier and confident now.",
   },
 ];
+
 // select items
 const img = document.getElementById("person-img");
 const author = document.getElementById("author");
