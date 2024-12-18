@@ -79,59 +79,12 @@ a {
   text-decoration: none;
 }
 
-/*
-=============
-footer
-============
-*/
-.footer {
-  padding: 60px 20px;
-  display: flex;
-  background-color: var(--clr-black);
-  color: var(--clr-primary-10);
-}
-
-.footer .container .row {
-  gap: 2rem;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-  .footer .container .row {
-    display: inline-block;
-  }
-  .footer .container .row .col {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-}
-
-.admin-section {
+section {
   padding: 60px 60px;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .container .row {
-    display: inline-block;
-    justify-items: center;
-  }
-  .container .row .col {
-    margin-bottom: 2rem;
-  }
-}
-
-.record {
-  padding: 60px 60px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.record .header {
-  text-align: center;
-}
-
-.table-data {
-  margin-top: 2rem;
+.container {
+  width: 32rem;
 }
