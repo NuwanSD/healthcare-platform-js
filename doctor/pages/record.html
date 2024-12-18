@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>Doctor Dashboard</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -85,7 +85,14 @@
     <section class="record">
       <div class="header">
         <h3>Patient Records</h3>
-        <button type="button" class="btn btn-primary">New Record +</button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          New Record +
+        </button>
       </div>
       <div class="table-data">
         <table class="table table-bordered">
@@ -124,6 +131,106 @@
             </tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <section>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Add Medical Record
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="mbbsNo"
+                    placeholder="mbbsno"
+                  />
+                  <label for="patinetName">MBBS NO</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="patientNIC"
+                    placeholder="patient_NIC"
+                  />
+                  <label for="patientNIC" class="form-label">Patient NIC</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="diagnosis"
+                    placeholder="diagnosis"
+                  />
+                  <label for="diagnosis" class="form-label">Diagnosis</label>
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Treatment</span>
+                  <textarea
+                    class="form-control"
+                    aria-label="With textarea"
+                  ></textarea>
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Prescription</span>
+                  <textarea
+                    class="form-control"
+                    aria-label="With textarea"
+                  ></textarea>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="phone"
+                    placeholder="phone"
+                  />
+                  <label for="phone" class="form-label">Record Date</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
